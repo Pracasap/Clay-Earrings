@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import { Nav, Navbar, NavbarBrand, NavbarToggler, Collapse, NavItem } from 'reactstrap';
-import { NavLink } from 'react-router-dom';
+import { Nav, Navbar, NavbarBrand, NavbarToggler, Collapse, NavItem, NavLink } from 'reactstrap';
 
 class Header extends Component {
 
@@ -22,8 +21,8 @@ class Header extends Component {
     render() {
         return (
             <React.Fragment>
-                <Navbar dark sticky="top" expand="md" className="nav-bar">  
-                    <div className="container">  
+                <Navbar color="dark" sticky="top" expand="md" className="nav-bar">  
+                    <div className="container">
                         <NavbarBrand href="/" className="NavbarBrand font-weight-bold"><ion-icon name="leaf" /> 
                         Forever Creating!</NavbarBrand> 
                         <NavbarToggler onClick={this.toggleNav} />
@@ -36,7 +35,7 @@ class Header extends Component {
                                 </NavItem>
                                 <NavItem>
                                     <NavLink className="nav-link mr-4" to="/projects" onClick={this.toggleNav}>
-                                    <ion-icon name="documents" /> &nbsp;PROJECTS
+                                    <ion-icon name="documents" /> &nbsp;SHOP
                                     </NavLink>
                                 </NavItem>
                                 <NavItem>
@@ -47,7 +46,7 @@ class Header extends Component {
                             </Nav>
                         </Collapse> 
                     </div>  
-                </Navbar> 
+                </Navbar>
             </React.Fragment>
         )
     }
