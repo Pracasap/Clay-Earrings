@@ -7,15 +7,15 @@ function Header() {
 
     return (
         <React.Fragment>
-            <Navbar color="dark" sticky="top" expand="md" className="nav-bar">  
+            <Navbar dark sticky="top" expand="md" className="nav-bar">  
                 <div className="container">
                     <NavbarBrand href="/" className="NavbarBrand font-weight-bold"><ion-icon name="leaf" /> 
-                    Forever Creating!</NavbarBrand> 
+                    Forever Creating</NavbarBrand> 
                     <NavbarToggler onClick={toggleNav} />
                     <Collapse isOpen={collapsed} navbar>
                         <Nav navbar className="ml-5">
                             <NavItem>
-                                <NavLink className="nav-link mr-4" to="/home" onClick={toggleNav}>
+                                <NavLink className="nav-link mr-4 active" to="/home" onClick={toggleNav}>
                                 <ion-icon name="home" />  &nbsp;HOME
                                 </NavLink>
                             </NavItem>
