@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Style+Script&display=swap');
 
 body {
   background-color: #fff;
@@ -12,7 +12,7 @@ body {
 
 h1,
 .NavbarBrand {
-  font-family: 'Cookie', cursive;
+  font-family: 'Style Script', cursive;
 }
 
 .nav-bar {
@@ -26,4 +26,5 @@ h1,
 
 .nav-link {
   color: #fff;
+  cursor: pointer;
 }

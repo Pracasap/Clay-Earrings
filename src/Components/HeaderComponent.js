@@ -9,8 +9,9 @@ function Header() {
         <React.Fragment>
             <Navbar dark sticky="top" expand="md" className="nav-bar">  
                 <div className="container">
-                    <NavbarBrand href="/" className="NavbarBrand font-weight-bold"><ion-icon name="leaf" /> 
-                    Forever Creating</NavbarBrand> 
+                    <NavbarBrand href="/" className="NavbarBrand font-weight-bold">
+                        <ion-icon name="flower-outline" /> Forever Creating
+                    </NavbarBrand> 
                     <NavbarToggler onClick={toggleNav} />
                     <Collapse isOpen={collapsed} navbar>
                         <Nav navbar className="ml-5">
