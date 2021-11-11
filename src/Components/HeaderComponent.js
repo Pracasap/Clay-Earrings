@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { Nav, Navbar, NavbarBrand, NavbarToggler, Collapse, NavItem, NavLink} from 'reactstrap';
-import Image from 'react-bootstrap/Image';
 
 function Header() {
     const [collapsed, setCollapsed] = useState(false);
@@ -8,7 +7,7 @@ function Header() {
 
     return (
         <React.Fragment>
-            <Navbar light sticky="top" expand="md" className="nav-bar navbar-inverse bg-inverse">  
+            <Navbar light sticky="top" expand="md" className="nav-bar">  
                 <div className="container">
                     <NavbarBrand href="/" className="NavbarBrand font-weight-bold">
                         Forever Creating
