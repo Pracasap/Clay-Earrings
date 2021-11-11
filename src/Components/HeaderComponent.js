@@ -11,7 +11,7 @@ function Header() {
             <Navbar light sticky="top" expand="md" className="nav-bar navbar-inverse bg-inverse">  
                 <div className="container">
                     <NavbarBrand href="/" className="NavbarBrand font-weight-bold">
-                        <Image src="/images/foreverCreatingLogo.png" height={40} />
+                        Forever Creating
                     </NavbarBrand> 
                     <NavbarToggler onClick={toggleNav} />
                     <Collapse isOpen={collapsed} navbar>
