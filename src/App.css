@@ -16,15 +16,19 @@ h1,
 }
 
 .nav-bar {
-  background-color: rgb(103, 32, 114) !important;
+  background-color: rgb(225, 197, 145) !important;
 }
 
 .NavbarBrand {
   color: #fff;
   font-size: 30px !important;
+  margin-right: 100px !important;
 }
 
 .nav-link {
-  color: #fff;
+  color: rgb(28, 49, 89) !important;
   cursor: pointer;
+  margin-right: 30px;
+  font-weight: 600;
+  font-size: 18px !important;
 }

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { Nav, Navbar, NavbarBrand, NavbarToggler, Collapse, NavItem, NavLink } from 'reactstrap';
+import { Nav, Navbar, NavbarBrand, NavbarToggler, Collapse, NavItem, NavLink} from 'reactstrap';
+import Image from 'react-bootstrap/Image';
 
 function Header() {
     const [collapsed, setCollapsed] = useState(false);
@@ -7,27 +8,27 @@ function Header() {
 
     return (
         <React.Fragment>
-            <Navbar dark sticky="top" expand="md" className="nav-bar">  
+            <Navbar light sticky="top" expand="md" className="nav-bar navbar-inverse bg-inverse">  
                 <div className="container">
                     <NavbarBrand href="/" className="NavbarBrand font-weight-bold">
-                        <ion-icon name="flower-outline" /> Forever Creating
+                        <Image src="/images/foreverCreatingLogo.png" height={40} />
                     </NavbarBrand> 
                     <NavbarToggler onClick={toggleNav} />
                     <Collapse isOpen={collapsed} navbar>
-                        <Nav navbar className="ml-5">
+                        <Nav navbar>
                             <NavItem>
-                                <NavLink className="nav-link mr-4 active" to="/home" onClick={toggleNav}>
-                                <ion-icon name="home" />  &nbsp;HOME
+                                <NavLink className="nav-link active" to="/home" onClick={toggleNav}>
+                                <ion-icon name="home" /> &nbsp;HOME
                                 </NavLink>
                             </NavItem>
                             <NavItem>
-                                <NavLink className="nav-link mr-4" to="/projects" onClick={toggleNav}>
-                                <ion-icon name="documents" /> &nbsp;SHOP
+                                <NavLink className="nav-link" to="/projects" onClick={toggleNav}>
+                                <ion-icon name="diamond" />&nbsp;SHOP
                                 </NavLink>
                             </NavItem>
                             <NavItem>
                                 <NavLink className="nav-link" to="/contact" onClick={toggleNav}>
-                                <ion-icon name="call" /> &nbsp;CONTACT
+                                <ion-icon name="call" />&nbsp;CONTACT
                                 </NavLink>
                             </NavItem>
                         </Nav>
