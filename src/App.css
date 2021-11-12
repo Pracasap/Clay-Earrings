@@ -57,15 +57,76 @@ h1 {
   font-family: 'Style Script', cursive;
   font-size: 10rem !important;
   margin-top: 30vh !important;
+  margin-bottom: -20px;
   text-shadow: 0 0 10px #000; /* horizontal-offset vertical-offset 'blur' colour */
   -moz-text-shadow: 0 0 2px #000;
   -webkit-text-shadow: 0 0 2px #000;
 }
 
 h2 { 
+  margin-bottom: 50px;
   font-size: 3rem !important;
   font-family: 'Lato' !important;
   text-shadow: 0 0 10px #000; /* horizontal-offset vertical-offset 'blur' colour */
   -moz-text-shadow: 0 0 2px #000;
   -webkit-text-shadow: 0 0 2px #000;
 }
+
+/* Buttons */
+.btn,
+.btn:link,
+.btn:visited {
+    display: inline-block;
+    padding: 10px 30px !important;
+    font-weight: 400;
+    text-decoration: none;
+    border-radius: 0px !important;
+    -webkit-transition: background-color 0.2s, border 0.2s, color 0.2s;
+    transition: background-color 0.2s, border 0.2s, color 0.2s; }
+
+.btn-full,
+.btn-full:link,
+.btn-full:visited,
+button[type=submit],
+button[type=reset] {
+    background-color: #003366 !important;
+    border: 1px solid #003366  !important;
+    color: #fff !important; }
+
+
+.btn-full:hover,
+.btn-full:active {
+    border: 1px solid rgb(254, 189, 107) !important;
+    background-color: rgb(254, 189, 107) !important;
+    color: #000 !important;
+}
+    
+.btn-ghost,
+.btn-ghost:link,
+.btn-ghost:visited {
+    background-color: transparent !important;
+    border: 1px solid rgb(254, 189, 107) !important;
+    color: #fff !important; }
+
+.btn-ghost:hover,
+.btn-ghost:active {
+    border: 1px solid rgb(254, 189, 107) !important;
+    background-color: rgb(254, 189, 107) !important;
+    color: #000 !important;
+}
+
+.btn-project,
+.btn-project:link,
+.btn-project:visited
+{
+    background-color: rgb(254, 189, 107) !important;
+    border: 1px solid rgb(254, 189, 107) !important;
+    border-radius: 0 !important;
+    color: #000 !important; }
+
+.btn-project:hover,
+.btn-project:active {
+    background-color: transparent !important;
+    border: 1px solid rgb(254, 189, 107) !important;
+    border-radius: 0 !important;
+    color: #fff !important; }

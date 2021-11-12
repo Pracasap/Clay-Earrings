@@ -12,10 +12,11 @@ function Home() {
                     </video>
                     <h1>Forever Creating</h1>
                     <h2>How majestic</h2>
+                    <div className="d-flex justify-content-center">
                     {/* <Link to={ `/projects` }> */}
-                    <Button className="btn btn-lg mr-3">Projects</Button>
+                    <Button className="btn btn-full btn-lg mr-3">Shop My Creations</Button>
                     {/* </Link> */}
-                    
+                    </div>
                 </div>
             </div>
         </div>
