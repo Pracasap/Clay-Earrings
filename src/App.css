@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Style+Script&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,100;1,300&display=swap');
 
 body {
   background-color: #fff;
@@ -30,7 +30,7 @@ body {
   color: white !important;
   cursor: pointer;
   padding-right: 50px !important;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 18px !important;
 }
 
@@ -55,19 +55,21 @@ h1, h2 {
 
 h1 {
   font-family: 'Style Script', cursive;
-  font-size: 10rem !important;
-  margin-top: 30vh !important;
-  margin-bottom: -20px;
-  text-shadow: 0 0 10px #000; /* horizontal-offset vertical-offset 'blur' colour */
+  font-size: 9rem !important;
+  margin-top: 25vh !important;
+  margin-bottom: -20px !important;
+  text-shadow: 2px 2px 7px #000 !important; /* horizontal-offset vertical-offset 'blur' colour */
   -moz-text-shadow: 0 0 2px #000;
   -webkit-text-shadow: 0 0 2px #000;
 }
 
 h2 { 
-  margin-bottom: 50px;
+  margin-bottom: 80px !important;
   font-size: 3rem !important;
   font-family: 'Lato' !important;
-  text-shadow: 0 0 10px #000; /* horizontal-offset vertical-offset 'blur' colour */
+  font-weight: 600 !important;
+  font-style: italic;
+  text-shadow: 2px 2px 4px #000 !important; /* horizontal-offset vertical-offset 'blur' colour */
   -moz-text-shadow: 0 0 2px #000;
   -webkit-text-shadow: 0 0 2px #000;
 }
@@ -96,8 +98,8 @@ button[type=reset] {
 
 .btn-full:hover,
 .btn-full:active {
-    border: 1px solid rgb(254, 189, 107) !important;
-    background-color: rgb(254, 189, 107) !important;
+    border: 1px solid rgb(33, 201, 201) !important;
+    background-color: rgb(33, 201, 201) !important;
     color: #000 !important;
 }
     
