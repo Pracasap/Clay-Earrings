@@ -8,7 +8,7 @@ function Home() {
     return (
         <div className="container">
             <div className="row">
-                <div className="col">
+                <div className="col home">
                     <video id="background-video" autoPlay loop muted poster={background}>
                         <source src={earring} type="video/mp4" />
                     </video>

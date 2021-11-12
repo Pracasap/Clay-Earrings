@@ -105,6 +105,29 @@ button[type=reset] {
     color: #000 !important;
 }
 
+.home {
+  height: 100vh !important;
+}
+
+.social-links {
+  font-size: 25px !important;
+  text-align: right;
+}
+
+.copyright {
+  text-align: left;
+}
+
+/* Footer */
+.site-footer {
+  background-image: linear-gradient(to right, #30cfd0 0%, #330867 100%);
+
+}
+
+.footer-icon {
+  color: #fff !important;
+}
+
 
 @media (max-width: 992px) {
 
