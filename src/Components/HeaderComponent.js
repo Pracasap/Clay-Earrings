@@ -21,7 +21,7 @@ function Header() {
                                 </NavLink>
                             </NavItem>
                             <NavItem>
-                                <NavLink className="nav-link" to="/projects" onClick={toggleNav}>
+                                <NavLink className="nav-link" to="/shop" onClick={toggleNav}>
                                 <ion-icon name="diamond" />&nbsp;SHOP
                                 </NavLink>
                             </NavItem>

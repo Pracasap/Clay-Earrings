@@ -22,7 +22,8 @@ body {
 
 .NavbarBrand {
   color: rgb(28, 49, 89) !important;
-  font-size: 35px !important;
+  text-shadow: 2px 2px 5px rgb(0, 251, 255) !important;
+  font-size: 38px !important;
   font-weight: 500;
 }
 
@@ -32,6 +33,7 @@ body {
   padding-right: 50px !important;
   font-weight: 400;
   font-size: 18px !important;
+  text-shadow: 2px 1px 5px rgb(50, 50, 50) !important;
 }
 
 #background-video {
