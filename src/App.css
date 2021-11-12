@@ -21,9 +21,9 @@ body {
 }
 
 .NavbarBrand {
-  color: rgb(28, 49, 89) !important;
+  color: rgb(0, 0, 0) !important;
   text-shadow: 2px 2px 5px rgb(0, 251, 255) !important;
-  font-size: 38px !important;
+  font-size: 35px !important;
   font-weight: 500;
 }
 
@@ -111,7 +111,6 @@ button[type=reset] {
 
 .social-links {
   font-size: 25px !important;
-  text-align: right;
 }
 
 .copyright {
@@ -120,7 +119,7 @@ button[type=reset] {
 
 /* Footer */
 .site-footer {
-  background-image: linear-gradient(to right, #30cfd0 0%, #330867 100%);
+  background-image: linear-gradient(to right, #3ab5b0 0%, #3d99be 31%, #56317a 100%);
 
 }
 
