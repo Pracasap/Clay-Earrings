@@ -56,7 +56,7 @@ h1, h2 {
 h1 {
   font-family: 'Style Script', cursive;
   font-size: 9rem !important;
-  margin-top: 25vh !important;
+  margin-top: 28vh !important;
   margin-bottom: -20px !important;
   text-shadow: 2px 2px 7px #000 !important; /* horizontal-offset vertical-offset 'blur' colour */
   -moz-text-shadow: 0 0 2px #000;
