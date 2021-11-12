@@ -11,27 +11,30 @@ body {
   scroll-behavior: smooth;
 }
 
-h1,
 .NavbarBrand {
   font-family: 'Style Script', cursive;
 }
 
 /* NavBar */
 .nav-bar {
-  background-color: rgb(225, 197, 145) !important;
+  background-image: linear-gradient(120deg, #fccb90 0%, #d57eeb 100%);
 }
 
 .NavbarBrand {
   color: rgb(28, 49, 89) !important;
-  font-size: 30px !important;
-  margin-right: 100px !important;
+  font-size: 35px !important;
   font-weight: 500;
 }
 
 .nav-link {
   color: rgb(28, 49, 89) !important;
   cursor: pointer;
-  margin-right: 30px;
+  padding-right: 50px !important;
   font-weight: 500;
   font-size: 18px !important;
+}
+
+.home {
+  height: 100vh;
+  /* background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%) !important; */
 }

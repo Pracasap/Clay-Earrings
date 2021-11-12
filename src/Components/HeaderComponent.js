@@ -9,14 +9,14 @@ function Header() {
         <React.Fragment>
             <Navbar light sticky="top" expand="md" className="nav-bar">  
                 <div className="container">
-                    <NavbarBrand href="/" className="NavbarBrand font-weight-bold">
+                    <NavbarBrand href="/" className="NavbarBrand">
                         Forever Creating
                     </NavbarBrand> 
                     <NavbarToggler onClick={toggleNav} />
                     <Collapse isOpen={collapsed} navbar>
-                        <Nav navbar>
+                        <Nav className="ms-auto" navbar>
                             <NavItem>
-                                <NavLink className="nav-link active" to="/home" onClick={toggleNav}>
+                                <NavLink className="nav-link" to="/home" onClick={toggleNav}>
                                 <ion-icon name="home" /> &nbsp;HOME
                                 </NavLink>
                             </NavItem>
