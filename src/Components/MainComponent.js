@@ -13,8 +13,8 @@ function Main() {
                 <Header />
                 <Switch>
                     <Route path='/home' component={Home} />
-                    <Route exact path='/shop' render={() => <Products />} />
-                    <Route exact path='/contact' render={() => <Contact />} />
+                    <Route exact path='/shop' component={Products} />
+                    <Route exact path='/contact'  component={Contact} />
                     <Redirect to='/home' />
                 </Switch>
                 <Footer />

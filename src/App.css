@@ -71,7 +71,7 @@ h2 {
   font-family: 'Lato' !important;
   font-weight: 600 !important;
   font-style: italic;
-  text-shadow: 2px 2px 4px #000 !important; /* horizontal-offset vertical-offset 'blur' colour */
+  text-shadow: 2px 2px 5px #000 !important; /* horizontal-offset vertical-offset 'blur' colour */
   -moz-text-shadow: 0 0 2px #000;
   -webkit-text-shadow: 0 0 2px #000;
 }
@@ -95,8 +95,8 @@ button[type=submit],
 button[type=reset] {
     background-color: #003366 !important;
     border: 1px solid #003366  !important;
-    color: #fff !important; }
-
+    color: #fff !important;
+  }
 
 .btn-full:hover,
 .btn-full:active {

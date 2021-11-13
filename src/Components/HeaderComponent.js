@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { Nav, Navbar, NavbarBrand, NavbarToggler, Collapse, NavItem, NavLink} from 'reactstrap';
+import { Nav, Navbar, NavbarBrand, NavbarToggler, Collapse, NavItem } from 'reactstrap';
+import { NavLink } from 'react-router-dom';
 
 function Header() {
     const [collapsed, setCollapsed] = useState(false);
