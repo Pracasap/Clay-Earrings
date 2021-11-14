@@ -11,13 +11,13 @@ function Products(props) {
     })
     return (
         <div className="container-fluid products">
-            <div className="container mb-5">
+            <div className="container pb-5">
                 <div className="row">
                     <div className="col mt-5">
                         <h3>Clay Earrings</h3>
                     </div>
                 </div>
-                <div className="row row-content" style={{backgroundColor: '#f1f1f1', borderRadius: 2}}>
+                <div className="row row-content" style={{backgroundColor: 'white', borderRadius: 2}}>
                         {earrings}
                 </div>
             </div>
