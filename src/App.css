@@ -122,10 +122,27 @@ button[type=reset] {
   text-align: left;
 }
 
+.row-content {
+  padding: 10px;
+  align-content: center;
+}
+
 /* Products */
 .products {
-  min-height: 100vh;
   background-image: linear-gradient(-150deg, #2CD8D5 0%, #C5C1FF 56%, #FFBAC3 100%);
+}
+
+.card-title {
+  font-size: 20px;
+  color:black;
+  font-weight: 600;
+}
+
+.card-text {
+  font-size: 18px;
+  font-weight: 400;
+  width: 100%;
+  color: rgb(50, 50, 50) !important;
 }
 
 /* Footer */
