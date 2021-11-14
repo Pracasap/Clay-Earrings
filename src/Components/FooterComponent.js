@@ -9,18 +9,18 @@ function Footer() {
                         <h6>© 2021 Copyrights ForeverCreating.com</h6>
                     </div>
                     <div className="col-md-6 social-links d-flex justify-content-end align-items-end">
-                        <a href="https://www.linkedin.com/in/prakashsapkota7/" target="_blank" rel="noreferrer">
-                        <span className="footer-icon"><ion-icon name="logo-linkedin" /></span>
+                        <a href="https://www.facebook.com/forevercreating" target="_blank" rel="noreferrer">
+                        <span className="footer-icon"><ion-icon name="logo-facebook" /></span>
                         </a>&#8194;
-                        <a href="http://github.com/pracasap" target="_blank" rel="noreferrer">
-                        <span className="footer-icon"><ion-icon name="logo-github" /></span>
+                        <a href="http://instagram.com/forevercreating" target="_blank" rel="noreferrer">
+                        <span className="footer-icon"><ion-icon name="logo-instagram" /></span>
                         </a>&#8194;
-                        <a href="mailto:optimistic.prakash@gmail.com" target="_blank" rel="noreferrer">
-                        <span className="footer-icon"><ion-icon name="mail" /></span>
-                        </a>&#8194;
-                        <a href="http://twitter.com/enceder_" target="_blank" rel="noreferrer">
+                        <a href="http://twitter.com/forevercreating" target="_blank" rel="noreferrer">
                         <span className="footer-icon"><ion-icon name="logo-twitter" /></span>
                         </a>&#8194;
+                        <a href="mailto:forevercreating@gmail.com" target="_blank" rel="noreferrer">
+                        <span className="footer-icon"><ion-icon name="mail" /></span>
+                        </a>
                     </div>
                 </div>
             </div>
