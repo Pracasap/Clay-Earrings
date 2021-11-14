@@ -1,4 +1,4 @@
-import React, { Profiler } from 'react';
+import React from 'react';
 import Header from './HeaderComponent';
 import Home from './HomeComponent';
 import Products from './ProductComponent';
