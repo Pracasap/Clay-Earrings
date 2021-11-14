@@ -8,7 +8,7 @@ function Footer() {
                     <div className="col-md-6 copyright">
                         <h6>© 2021 Copyrights ForeverCreating.com</h6>
                     </div>
-                    <div className="col-md-6 social-links d-flex justify-content-end align-items-end">
+                    <div className="col-md-6 social-links">
                         <a href="https://www.facebook.com/forevercreating" target="_blank" rel="noreferrer">
                         <span className="footer-icon"><ion-icon name="logo-facebook" /></span>
                         </a>&#8194;
