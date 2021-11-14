@@ -81,6 +81,11 @@ h3 {
   font-size: 3rem !important;
 }
 
+h4 {
+  font-family: 'Style Script', cursive;
+  font-size: 2rem !important;
+}
+
 /* Buttons */
 .btn,
 .btn:link,

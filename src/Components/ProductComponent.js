@@ -32,7 +32,7 @@ const RenderProducts = ({product}) => {
                 <img width="100%" src={product.image} alt={product.name} />
             </div>
             <CardBody>
-            <CardTitle>{product.name}</CardTitle>
+            <CardTitle><h4>{product.name}</h4></CardTitle>
             <CardText>{product.description}</CardText>
             </CardBody>
         </Card>
