@@ -86,7 +86,7 @@ h3 {
 .btn:link,
 .btn:visited {
     display: inline-block;
-    padding: 15px 30px !important;
+    padding: 12px 30px !important;
     font-weight: 400;
     text-decoration: none;
     border-radius: 0px !important;
@@ -115,8 +115,9 @@ button[type=reset] {
 }
 
 .social-links {
-  font-size: 25px !important;
+  font-size: 28px !important;
   text-align: right;
+  justify-content: center !important;
 }
 
 .copyright {
