@@ -76,6 +76,11 @@ h2 {
   -webkit-text-shadow: 0 0 2px #000;
 }
 
+h3 {
+  font-family: 'Style Script', cursive;
+  font-size: 3rem !important;
+}
+
 /* Buttons */
 .btn,
 .btn:link,

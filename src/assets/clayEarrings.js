@@ -1,4 +1,4 @@
-export const PROJECTS = [
+export const Earrings = [
     {
         "id": 0,
         "name": "Portfolio Mobile App",
