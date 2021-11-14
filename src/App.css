@@ -14,10 +14,6 @@ body {
   scroll-behavior: smooth;
 }
 
-.NavbarBrand {
-  font-family: 'Style Script', cursive;
-}
-
 /* NavBar */
 .nav-bar {
   background-image: linear-gradient(to right, #30cfd0 0%, #330867 100%);
@@ -25,9 +21,10 @@ body {
 
 .NavbarBrand {
   color: rgb(0, 0, 0) !important;
-  text-shadow: 2px 2px 5px rgb(139, 114, 239) !important;
+  text-shadow: 2px 2px 5px rgb(202, 188, 255) !important;
   font-size: 35px !important;
   font-weight: 500;
+  font-family: 'Style Script', cursive;
 }
 
 .nav-link {
@@ -114,7 +111,7 @@ button[type=reset] {
 }
 
 .home {
-  height: 100vh !important;
+  min-height: 100vh !important;
 }
 
 .social-links {
@@ -136,7 +133,7 @@ button[type=reset] {
 
 /* Products */
 .products {
-  min-height: calc(100vh - 150px) !important;
+  min-height: calc(100vh - 155px) !important;
   background-image: linear-gradient(-150deg, #2CD8D5 0%, #C5C1FF 56%, #FFBAC3 100%);
 }
 
@@ -158,7 +155,6 @@ button[type=reset] {
 /* Footer */
 .site-footer {
   background-image: linear-gradient(to right, #3ab5b0 0%, #3d99be 31%, #56317a 100%);
-
 }
 
 .footer-icon {
