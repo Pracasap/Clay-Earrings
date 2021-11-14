@@ -116,7 +116,7 @@ button[type=reset] {
 }
 
 .home {
-  min-height: 100vh !important;
+  min-height: calc(100vh - 155px) !important;
 }
 
 .social-links {

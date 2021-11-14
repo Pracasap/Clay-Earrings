@@ -1,5 +1,6 @@
 import React from 'react'; 
-import { Card, CardBody, CardText, CardTitle } from 'reactstrap';
+import { Card, CardBody, CardText, CardTitle, Button } from 'reactstrap';
+import { Link } from 'react-router-dom';
 
 function Products(props) {
     const ourProducts = props.ourProducts.map(product => {
@@ -34,6 +35,10 @@ const RenderProducts = ({product}) => {
             <CardBody>
             <CardTitle><h4>{product.name}</h4></CardTitle>
             <CardText>{product.description}</CardText>
+            <hr></hr>
+            <Link to={ `/shop` }>
+                <Button className="btn btn-full btn-lg">Shop</Button>
+            </Link>
             </CardBody>
         </Card>
     )

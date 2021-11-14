@@ -3,7 +3,7 @@ export const ProductTypes = [
         "id": 0,
         "name": "Clay Earrings",
         "image": "images/clayEarrings.png",
-        "description": "Hand-made clay earrings are to die for. We have varieties of earrings and we think you will love them."
+        "description": "Hand-made clay earrings are to die for. We have varieties of earrings and we are sure you will love them."
     },
     {
         "id": 1,
