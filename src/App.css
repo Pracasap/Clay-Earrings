@@ -120,6 +120,8 @@ button[type=reset] {
 
 .copyright {
   text-align: left;
+  display: grid !important;
+    align-content: center !important;
 }
 
 .row-content {
@@ -129,10 +131,6 @@ button[type=reset] {
 
 .form-label {
   font-size: 22px !important;
-}
-
-FormGroup {
-  margin-bottom: 50px !important;
 }
 
 /* Products */

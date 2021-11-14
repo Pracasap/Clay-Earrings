@@ -5,7 +5,7 @@ function Footer() {
         <footer className="site-footer p-4">
             <div className="container">
                 <div className="row">
-                    <div className="col-md-6 copyright d-flex align-items-center">
+                    <div className="col-md-6 copyright">
                         <h6>© 2021 Copyrights ForeverCreating.com</h6>
                     </div>
                     <div className="col-md-6 social-links d-flex justify-content-end align-items-end">

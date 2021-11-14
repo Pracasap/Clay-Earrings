@@ -201,7 +201,7 @@ class Contact extends Component {
                                     <Col className="col-lg-2 d-none d-lg-block">
                                     </Col>
                                     <Col className="col col-lg-10 d-flex justify-content-center justify-content-lg-start">
-                                        <Button className="btn btn-full btn-lg" type="submit">Send</Button>&nbsp;&nbsp;
+                                        <Button className="btn btn-full btn-lg" type="submit">Send</Button>&ensp;
                                         <Button className="btn btn-full btn-lg" type="reset" onClick={this.resetForm}>Reset</Button>
                                     </Col>
                                 </FormGroup>
