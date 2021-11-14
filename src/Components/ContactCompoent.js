@@ -2,6 +2,7 @@ import emailjs from 'emailjs-com';
 import React, { Component } from "react";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+
 import {  Button, Form, FormGroup, Label, Input, Col, FormFeedback } from 'reactstrap';
 
 class Contact extends Component {
@@ -135,11 +136,11 @@ class Contact extends Component {
                             <h3>Get In Touch</h3>
                         </div>
                     </div>
-                    <div className="row row-content" style={{backgroundColor: '#fff', borderRadius: 2}}>
+                    <div className="row row-content" style={{backgroundColor: '#fff', opacity: 0.8, borderRadius: 2}}>
                         <div className="col m-2 m-md-3 m-lg-4 m-xl-5">
                             <ToastContainer />
                             <Form onSubmit={this.handleSubmit} id="contactForm">
-                                <FormGroup row>
+                                <FormGroup row className="mb-3">
                                     <Label htmlFor="firstName" className="form-label" lg={2}>First Name</Label>
                                     <Col>
                                         <Input type="text" id="firstName" 
@@ -154,7 +155,7 @@ class Contact extends Component {
                                         <FormFeedback>{errors.firstName}</FormFeedback>
                                     </Col>
                                 </FormGroup>
-                                <FormGroup row>
+                                <FormGroup row className="mb-3">
                                     <Label htmlFor="lastName" className="form-label" lg={2}>Last Name</Label>
                                     <Col>
                                     <Input type="text" id="lastName"
@@ -169,7 +170,7 @@ class Contact extends Component {
                                         <FormFeedback>{errors.lastName}</FormFeedback>
                                     </Col>
                                 </FormGroup>
-                                <FormGroup row>
+                                <FormGroup row className="mb-3">
                                     <Label htmlFor="email" className="form-label" lg={2}>Email</Label>
                                     <Col>
                                     <Input type="email" id="email" name="email"
@@ -183,7 +184,7 @@ class Contact extends Component {
                                     <FormFeedback>{errors.email}</FormFeedback>
                                     </Col>
                                 </FormGroup>
-                                <FormGroup row>
+                                <FormGroup row className="mb-3">
                                     <Label htmlFor="message" className="form-label" lg={2}>Message</Label>
                                     <Col>
                                         <Input type="textarea" id="message" name="message" className="form-control form-control-lg" rows="5"
@@ -196,12 +197,12 @@ class Contact extends Component {
                                         <FormFeedback>{errors.message}</FormFeedback>
                                     </Col>
                                 </FormGroup>
-                                <FormGroup row>
+                                <FormGroup row className="mb-3">
                                     <Col className="col-lg-2 d-none d-lg-block">
                                     </Col>
                                     <Col className="col col-lg-10 d-flex justify-content-center justify-content-lg-start">
                                         <Button className="btn btn-full btn-lg mr-2" type="submit">Send</Button>
-                                        <Button className="btn btn-full btn-lg mr-2" type="reset" onClick={this.resetForm}>Reset</Button>
+                                        <Button className="btn btn-full btn-lg" type="reset" onClick={this.resetForm}>Reset</Button>
                                     </Col>
                                 </FormGroup>
                             </Form>

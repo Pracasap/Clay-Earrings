@@ -131,6 +131,10 @@ button[type=reset] {
   font-size: 22px !important;
 }
 
+FormGroup {
+  margin-bottom: 50px !important;
+}
+
 /* Products */
 .products {
   min-height: calc(100vh - 155px) !important;

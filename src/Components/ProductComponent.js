@@ -34,10 +34,6 @@ const RenderEarrings = ({earring}) => {
             <CardBody>
             <CardTitle>{earring.name}</CardTitle>
             <CardText>{earring.description}</CardText>
-            <hr />
-            {/* <div className="card-icon">
-                <RenderIcons project={project} />
-            </div> */}
             </CardBody>
         </Card>
     )
