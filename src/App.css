@@ -33,9 +33,9 @@ body {
 .nav-link {
   color: white !important;
   cursor: pointer;
-  padding-right: 50px !important;
   font-weight: 400;
   font-size: 18px !important;
+  padding-left: 50px !important;
   text-shadow: 2px 1px 5px rgb(50, 50, 50) !important;
 }
 

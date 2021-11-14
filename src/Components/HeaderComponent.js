@@ -13,7 +13,7 @@ function Header() {
                     <NavbarBrand href="/" className="NavbarBrand">
                         Forever Creating
                     </NavbarBrand> 
-                    <NavbarToggler onClick={toggleNav} />
+                    <NavbarToggler onClick={toggleNav} className="navbar-dark" />
                     <Collapse isOpen={collapsed} navbar>
                         <Nav className="ms-auto" navbar>
                             <NavItem>
