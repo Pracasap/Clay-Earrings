@@ -1,3 +1,29 @@
+export const ProductTypes = [
+    {
+        "id": 0,
+        "name": "Clay Earrings",
+        "image": "images/clayEarring.jpg",
+        "description": "Hand-made clay earrings are to die for. We have varieties of earrings and we think you will love them."
+    },
+    {
+        "id": 1,
+        "name": "Essential Oils",
+        "image": "images/portfolio-React-native.png",
+        "description": "This is my personal portfolio mobile app that I built using React Native. I learnt different React Native UI Components, React Native Alerts, Animations, Gestures, The Expo SDK, and much more while working on this project."
+    },
+    {
+        "id": 2,
+        "name": "Bath Salts",
+        "image": "images/portfolio-React-native.png",
+        "description": "This is my personal portfolio mobile app that I built using React Native. I learnt different React Native UI Components, React Native Alerts, Animations, Gestures, The Expo SDK, and much more while working on this project."
+    },
+    {
+        "id": 3,
+        "name": "Candles",
+        "image": "images/portfolio-React-native.png",
+        "description": "This is my personal portfolio mobile app that I built using React Native. I learnt different React Native UI Components, React Native Alerts, Animations, Gestures, The Expo SDK, and much more while working on this project."
+    },
+]
 export const Earrings = [
     {
         "id": 0,

@@ -2,10 +2,10 @@ import React from 'react';
 import { Card, CardBody, CardText, CardTitle } from 'reactstrap';
 
 function Products(props) {
-    const earrings = props.earrings.map(earring => {
+    const ourProducts = props.ourProducts.map(product => {
         return (
-            <div key={earring.id} className="col-md-6 p-3">
-                <RenderEarrings earring={earring} />
+            <div key={product.id} className="col-md-6 p-3">
+                <RenderProducts product={product} />
             </div>
         )
     })
@@ -14,26 +14,26 @@ function Products(props) {
             <div className="container pb-5">
                 <div className="row">
                     <div className="col mt-5">
-                        <h3>Clay Earrings</h3>
+                        <h3>Our Products</h3>
                     </div>
                 </div>
-                <div className="row row-content" style={{backgroundColor: 'white', borderRadius: 2}}>
-                        {earrings}
+                <div className="row row-content" style={{backgroundColor: 'white', borderRadius: 2 }}>
+                        {ourProducts}
                 </div>
             </div>
         </div>
     )
 }
 
-const RenderEarrings = ({earring}) => {
+const RenderProducts = ({product}) => {
     return (
         <Card className="shadow">
             <div className="card-img-div">
-                <img width="100%" src={earring.image} alt={earring.name} />
+                <img width="100%" src={product.image} alt={product.name} />
             </div>
             <CardBody>
-            <CardTitle>{earring.name}</CardTitle>
-            <CardText>{earring.description}</CardText>
+            <CardTitle>{product.name}</CardTitle>
+            <CardText>{product.description}</CardText>
             </CardBody>
         </Card>
     )

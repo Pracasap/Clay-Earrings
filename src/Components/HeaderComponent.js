@@ -15,7 +15,7 @@ function Header() {
                     </NavbarBrand> 
                     <NavbarToggler onClick={toggleNav} className="navbar-dark" />
                     <Collapse isOpen={collapsed} navbar>
-                        <Nav className="ms-auto" navbar>
+                        <Nav className="ml-auto" navbar>
                             <NavItem>
                                 <NavLink className="nav-link" to="/home" onClick={toggleNav}>
                                 <ion-icon name="home" /> &nbsp;HOME
