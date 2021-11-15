@@ -16,7 +16,7 @@ function Home() {
                     <h2>How majestic</h2>
                     <div className="d-flex justify-content-center">
                     <Link to={ `/shop` }>
-                        <Button className="btn btn-full btn-lg mr-3">Shop My Creations</Button>
+                        <Button className="btn btn-full btn-lg mr-3">Shop Our Creations</Button>
                     </Link>
                     </div>
                 </div>
