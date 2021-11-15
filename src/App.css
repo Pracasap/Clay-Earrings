@@ -160,6 +160,12 @@ button[type=reset] {
   color: rgb(50, 50, 50) !important;
 }
 
+.contactBox {
+  background-image: url(./images/blurry-gradient-haikei.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 /* Footer */
 .site-footer {
   background-image: linear-gradient(to right, #3ab5b0 0%, #3d99be 31%, #56317a 100%);

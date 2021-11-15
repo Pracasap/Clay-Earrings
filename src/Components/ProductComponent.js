@@ -18,7 +18,7 @@ function Products(props) {
                         <h3>Our Products</h3>
                     </div>
                 </div>
-                <div className="row row-content" style={{backgroundColor: 'white', borderRadius: 2 }}>
+                <div className="row row-content contactBox" style={{ borderRadius: 2 }}>
                         {ourProducts}
                 </div>
             </div>
