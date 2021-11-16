@@ -13,21 +13,13 @@ function Main(props) {
         const [ourProducts] = useState(ProductTypes);
         const [ourEarrings] = useState(clayEarrings);
 
-        const ProductName = ({match}) => {
-            return (
-                <Earrings
-                    earrings={ourEarrings.filter(earring => earring.id === +match.params.productId)[0]}
-                />
-            )
-        }
-
         return (
             <React.Fragment>
                 <Header />
                 <Switch>
                     <Route path='/home' component={Home} />
                     <Route exact path='/shop'  render={() => <Products ourProducts={ourProducts} />}/>
-                    <Route exact path='/shop/:productId'  component={ProductName} />
+                    <Route exact path='/shop/ClayEarrings'  render={() => <Earrings earrings={ourEarrings} />} />
                     <Route exact path='/contact' component={Contact} />
                     <Redirect to='/home' />
                 </Switch>

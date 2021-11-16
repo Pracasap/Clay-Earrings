@@ -272,6 +272,7 @@ button[type=reset] {
     -moz-text-shadow: 0 0 2px #000;
     -webkit-text-shadow: 0 0 2px #000;
     line-height: 0.8 !important;
+    padding-top: 20vh;
   }
 
   h2 { 
@@ -286,5 +287,7 @@ button[type=reset] {
   }
   .home {
     min-height: 95vh !important;
+    display: grid !important;
+    align-content:flex-start !important;
   }
 }
