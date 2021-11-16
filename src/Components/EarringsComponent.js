@@ -15,7 +15,11 @@ function Earrings(props) {
             <div className="container pb-5">
                 <div className="row">
                     <div className="col mt-5">
-                        <h3>Clay Earrings</h3>
+                        <h3>
+                            <Link to={ `/shop` }>
+                                <ion-icon name="return-up-back-outline" />
+                            </Link>&ensp;Clay Earrings
+                        </h3>
                     </div>
                 </div>
                 <div className="row row-content contactBox" style={{ borderRadius: 2 }}>
@@ -36,9 +40,11 @@ const RenderEarrings = ({earring}) => {
             <CardTitle><h4>{earring.name} - {earring.price}</h4></CardTitle>
             <CardText>{earring.description}</CardText>
             <hr></hr>
-            <Link to={ `/shop/` }>
-                <Button className="btn btn-full btn-lg">Add To Cart</Button>
-            </Link>
+            <div className="d-flex justify-content-center">
+                <Link to={ `/shop/` }>
+                    <Button className="btn btn-full btn-lg">Add To Cart</Button>
+                </Link>
+            </div>
             </CardBody>
         </Card>
     )
