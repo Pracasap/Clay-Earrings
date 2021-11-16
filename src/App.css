@@ -58,8 +58,7 @@ h1, h2 {
 h1 {
   font-family: 'Style Script', cursive;
   font-size: 9rem !important;
-  margin-top: 28vh !important;
-  margin-bottom: -20px !important;
+  
   text-shadow: 2px 2px 7px #000 !important; /* horizontal-offset vertical-offset 'blur' colour */
   -moz-text-shadow: 0 0 2px #000;
   -webkit-text-shadow: 0 0 2px #000;
@@ -117,6 +116,8 @@ button[type=reset] {
 
 .home {
   min-height: calc(100vh - 155px) !important;
+  display: grid !important;
+  align-content: center !important;
 }
 
 .social-links {
@@ -137,6 +138,10 @@ button[type=reset] {
 
 .form-label {
   font-size: 22px !important;
+}
+
+.backIcon {
+  font-size: 40px !important;
 }
 
 /* Products */
@@ -188,9 +193,7 @@ button[type=reset] {
   h1 {
     font-family: 'Style Script', cursive;
     font-size: 6rem !important;
-    margin-top: 28vh !important;
-    margin-bottom: -20px !important;
-    text-shadow: 2px 2px 7px #000 !important; /* horizontal-offset vertical-offset 'blur' colour */
+    text-shadow: 2px 2px 7px #000 !important;
     -moz-text-shadow: 0 0 2px #000;
     -webkit-text-shadow: 0 0 2px #000;
   }
@@ -201,7 +204,7 @@ button[type=reset] {
     font-family: 'Lato' !important;
     font-weight: 600 !important;
     font-style: italic;
-    text-shadow: 2px 2px 4px #000 !important; /* horizontal-offset vertical-offset 'blur' colour */
+    text-shadow: 2px 2px 4px #000 !important;
     -moz-text-shadow: 0 0 2px #000;
     -webkit-text-shadow: 0 0 2px #000;
   }
@@ -221,9 +224,7 @@ button[type=reset] {
   h1 {
     font-family: 'Style Script', cursive;
     font-size: 5rem !important;
-    margin-top: 15vh !important;
-    margin-bottom: -20px !important;
-    text-shadow: 2px 2px 7px #000 !important; /* horizontal-offset vertical-offset 'blur' colour */
+    text-shadow: 2px 2px 7px #000 !important;
     -moz-text-shadow: 0 0 2px #000;
     -webkit-text-shadow: 0 0 2px #000;
   }
@@ -267,9 +268,7 @@ button[type=reset] {
   h1 {
     font-family: 'Style Script', cursive;
     font-size: 6rem !important;
-    margin-top: 15vh !important;
-    margin-bottom: 20px !important;
-    text-shadow: 2px 2px 7px #000 !important; /* horizontal-offset vertical-offset 'blur' colour */
+    text-shadow: 2px 2px 7px #000 !important;
     -moz-text-shadow: 0 0 2px #000;
     -webkit-text-shadow: 0 0 2px #000;
     line-height: 0.8 !important;
@@ -277,15 +276,15 @@ button[type=reset] {
 
   h2 { 
     margin-bottom: 80px !important;
-    font-size: 2rem !important;
+    font-size: 2.5rem !important;
     font-family: 'Lato' !important;
     font-weight: 600 !important;
     font-style: italic;
-    text-shadow: 2px 2px 4px #000 !important; /* horizontal-offset vertical-offset 'blur' colour */
+    text-shadow: 2px 2px 4px #000 !important;
     -moz-text-shadow: 0 0 2px #000;
     -webkit-text-shadow: 0 0 2px #000;
   }
   .home {
-    min-height: 100vh !important;
+    min-height: 95vh !important;
   }
 }

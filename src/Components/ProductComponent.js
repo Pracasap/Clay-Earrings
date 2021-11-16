@@ -36,7 +36,7 @@ const RenderProducts = ({product}) => {
             <CardTitle><h4>{product.name}</h4></CardTitle>
             <CardText>{product.description}</CardText>
             <hr></hr>
-            <Link to={ `/shop/${product.name}` }>
+            <Link to={ `/shop/${product.id}` }>
                 <Button className="btn btn-full btn-lg">Shop</Button>
             </Link>
             </CardBody>

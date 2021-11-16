@@ -13,12 +13,15 @@ function Earrings(props) {
     return (
         <div className="container-fluid products">
             <div className="container pb-5">
-                <div className="row">
-                    <div className="col mt-5">
+                <div className="row pt-5">
+                    <div className="col-2 col-md-1 backIcon">
+                        <Link to={ `/shop` }>
+                            <ion-icon name="chevron-back-outline" />
+                        </Link>
+                    </div>
+                    <div className="col">
                         <h3>
-                            <Link to={ `/shop` }>
-                                <ion-icon name="return-up-back-outline" />
-                            </Link>&ensp;Clay Earrings
+                            Clay Earrings
                         </h3>
                     </div>
                 </div>
@@ -41,7 +44,7 @@ const RenderEarrings = ({earring}) => {
             <CardText>{earring.description}</CardText>
             <hr></hr>
             <div className="d-flex justify-content-center">
-                <Link to={ `/shop/` }>
+                <Link to={ `/shop` }>
                     <Button className="btn btn-full btn-lg">Add To Cart</Button>
                 </Link>
             </div>

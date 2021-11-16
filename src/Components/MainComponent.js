@@ -9,9 +9,17 @@ import { ProductTypes } from '../assets/products';
 import Earrings from './EarringsComponent';
 import { clayEarrings } from '../assets/clayEarrings';
 
-function Main() {
+function Main(props) {
         const [ourProducts] = useState(ProductTypes);
         const [ourEarrings] = useState(clayEarrings);
+
+        const ProductName = ({match}) => {
+            return (
+                <Earrings
+                    earrings={ourEarrings.filter(earring => earring.id === +match.params.productId)[0]}
+                />
+            )
+        }
 
         return (
             <React.Fragment>
@@ -19,7 +27,7 @@ function Main() {
                 <Switch>
                     <Route path='/home' component={Home} />
                     <Route exact path='/shop'  render={() => <Products ourProducts={ourProducts} />}/>
-                    <Route exact path='/shop/Clay Earrings'  render={() => <Earrings  earrings={ourEarrings} />}/>
+                    <Route exact path='/shop/:productId'  component={ProductName} />
                     <Route exact path='/contact' component={Contact} />
                     <Redirect to='/home' />
                 </Switch>
