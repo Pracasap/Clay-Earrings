@@ -45,7 +45,7 @@ const RenderEarrings = ({earring}) => {
             <hr></hr>
             <div className="d-flex justify-content-center">
                 <Link to={ `/shop` }>
-                    <Button className="btn btn-full btn-lg">Add To Cart</Button>
+                    <Button className="btn btn-full btn-lg">{earring.price} - Add To Cart</Button>
                 </Link>
             </div>
             </CardBody>
