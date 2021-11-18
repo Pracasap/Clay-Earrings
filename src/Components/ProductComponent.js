@@ -18,8 +18,8 @@ function Products(props) {
                         <h3>Our Products</h3>
                     </div>
                 </div>
-                <div className="row row-content contactBox" style={{ borderRadius: 2 }}>
-                        {ourProducts}
+                <div className="row" style={{ borderRadius: 2 }}>
+                    {ourProducts}
                 </div>
             </div>
         </div>

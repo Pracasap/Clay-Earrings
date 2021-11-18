@@ -25,7 +25,7 @@ function Earrings(props) {
                         </h3>
                     </div>
                 </div>
-                <div className="row row-content contactBox" style={{ borderRadius: 2 }}>
+                <div className="row" style={{ borderRadius: 2 }}>
                         {earrings}
                 </div>
             </div>
