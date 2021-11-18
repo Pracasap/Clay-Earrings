@@ -1,65 +1,65 @@
 export const clayEarrings = [
     {
         "id": 0,
-        "name": "Clay Earrings",
+        "name": "Lavender",
         "price": '$12',
         "image": "/images/clayEarrings.png",
-        "description": "Nature inspired clay earring."
+        "description": "who doesn't love lavender?"
     },
     {
-        "id": 0,
-        "name": "Clay Earrings",
+        "id": 1,
+        "name": "Nature Bliss",
         "price": '$18',
         "image": "/images/essentialOils.png",
         "description": "Nature inspired clay earring."
     },
     {
-        "id": 0,
-        "name": "Clay Earrings",
-        "price": '$30',
+        "id": 2,
+        "name": "Christmas",
+        "price": '$17',
         "image": "/images/bathSalts.png",
-        "description": "Nature inspired clay earring."
+        "description": "Christmas Special."
     },
     {
-        "id": 0,
-        "name": "Clay Earrings",
+        "id": 3,
+        "name": "Burgundy",
         "price": '$20',
         "image": "/images/clayEarrings.png",
-        "description": "Nature inspired clay earring."
+        "description": "Dark Red is to die for."
     },
     {
-        "id": 0,
-        "name": "Clay Earrings",
+        "id": 4,
+        "name": "Chocolate",
         "price": '$25',
         "image": "/images/bathSalts.png",
-        "description": "Nature inspired clay earring."
+        "description": "Want some chocolate?"
     },
     {
-        "id": 0,
-        "name": "Clay Earrings",
-        "price": '$45',
-        "image": "/images/essentialOils.png",
-        "description": "Nature inspired clay earring."
-    },
-    {
-        "id": 0,
-        "name": "Clay Earrings",
-        "price": '$27',
-        "image": "/images/bathSalts.png",
-        "description": "Nature inspired clay earring."
-    },
-    {
-        "id": 0,
-        "name": "Clay Earrings",
-        "price": '$50',
-        "image": "/images/clayEarrings.png",
-        "description": "Nature inspired clay earring."
-    },
-    {
-        "id": 0,
-        "name": "Clay Earrings",
+        "id": 5,
+        "name": "Honey",
         "price": '$15',
+        "image": "/images/essentialOils.png",
+        "description": "Sweet Honey."
+    },
+    {
+        "id": 6,
+        "name": "Watermelon",
+        "price": '$17',
         "image": "/images/bathSalts.png",
-        "description": "Nature inspired clay earring."
+        "description": "Watermelon Sugar."
+    },
+    {
+        "id": 7,
+        "name": "Greenary",
+        "price": '$20',
+        "image": "/images/clayEarrings.png",
+        "description": "So much green."
+    },
+    {
+        "id": 8,
+        "name": "Ocean",
+        "price": '$9',
+        "image": "/images/bathSalts.png",
+        "description": "Be Blue."
     },
 ];
