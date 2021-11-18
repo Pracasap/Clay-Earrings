@@ -5,9 +5,9 @@ import Products from './ProductComponent';
 import Contact from './ContactCompoent';
 import Footer from './FooterComponent';
 import { Switch, Route, Redirect, withRouter } from 'react-router-dom';
-import { ProductTypes } from '../assets/products';
 import Earrings from './EarringsComponent';
-import { clayEarrings } from '../assets/clayEarrings';
+import { ProductTypes } from '../assets/products';
+import { clayEarrings } from '../assets/products';
 
 function Main(props) {
         const [ourProducts] = useState(ProductTypes);
