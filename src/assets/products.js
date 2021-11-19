@@ -28,23 +28,23 @@ export const ProductTypes = [
 export const clayEarrings = [
     {
         "id": 0,
-        "name": "Lavender",
-        "price": '$12',
-        "image": "/images/clayEarrings.png",
-        "description": "who doesn't love lavender?"
+        "name": "Black Floral Moon",
+        "price": '$45',
+        "image": "/images/Earring1.png",
+        "description": "Black Floral Moon Earrings"
     },
     {
         "id": 1,
-        "name": "Nature Bliss",
-        "price": '$18',
-        "image": "/images/essentialOils.png",
-        "description": "Nature inspired clay earring."
+        "name": "Halloween Earrings",
+        "price": '$70',
+        "image": "/images/Earring2.png",
+        "description": "Homemade clay Halloween Earrings"
     },
     {
         "id": 2,
-        "name": "Christmas",
-        "price": '$17',
-        "image": "/images/bathSalts.png",
+        "name": "Black Gemstone",
+        "price": '$59',
+        "image": "/images/Earring3.png",
         "description": "Christmas Special."
     },
     {
