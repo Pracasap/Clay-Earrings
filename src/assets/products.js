@@ -31,42 +31,42 @@ export const clayEarrings = [
         "name": "Black Floral Moon",
         "price": '$45',
         "image": "/images/Earring1.png",
-        "description": "Black Floral Moon Earrings"
+        "description": "Black floral moon earrings"
     },
     {
         "id": 1,
         "name": "Halloween Earrings",
         "price": '$70',
         "image": "/images/Earring2.png",
-        "description": "Homemade clay Halloween Earrings"
+        "description": "Homemade clay Halloween earrings"
     },
     {
         "id": 2,
         "name": "Black Gemstone",
         "price": '$59',
         "image": "/images/Earring3.png",
-        "description": "Christmas Special."
+        "description": "Women's black gmstones earrings"
     },
     {
         "id": 3,
-        "name": "Burgundy",
-        "price": '$20',
-        "image": "/images/clayEarrings.png",
-        "description": "Dark Red is to die for."
+        "name": "Gray & white Floral",
+        "price": '$50',
+        "image": "/images/Earring4.png",
+        "description": "Gray & white floral sculpted earrings"
     },
     {
         "id": 4,
-        "name": "Chocolate",
-        "price": '$25',
-        "image": "/images/bathSalts.png",
-        "description": "Want some chocolate?"
+        "name": "The Ariel",
+        "price": '$45',
+        "image": "/images/Earring5.png",
+        "description": "Ariel Turquoise Green Seashells"
     },
     {
         "id": 5,
-        "name": "Honey",
-        "price": '$15',
-        "image": "/images/essentialOils.png",
-        "description": "Sweet Honey."
+        "name": "Snakes",
+        "price": '$25',
+        "image": "/images/Earring6.png",
+        "description": "Snakes Earrings"
     },
     {
         "id": 6,
