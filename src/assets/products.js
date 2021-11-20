@@ -9,7 +9,7 @@ export const ProductTypes = [
         "id": "EssentialOils",
         "name": "Essential Oils",
         "image": "images/essentialOils.png",
-        "description": "The essential oils we provide will calm you down, relieve from stress and anxiety. Must have item for your self care."
+        "description": "The essential oils we provide will calm you down and relieve you from stress and anxiety."
     },
     {
         "id": "BathSalts",
@@ -45,7 +45,7 @@ export const clayEarrings = [
         "name": "Black Gemstone",
         "price": '$59',
         "image": "/images/Earring3.png",
-        "description": "Black gmstones earrings"
+        "description": "Black gemstones earrings"
     },
     {
         "id": 3,
