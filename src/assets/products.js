@@ -70,23 +70,23 @@ export const clayEarrings = [
     },
     {
         "id": 6,
-        "name": "Watermelon",
-        "price": '$17',
-        "image": "/images/bathSalts.png",
-        "description": "Watermelon Sugar."
+        "name": "Monstera Hoops",
+        "price": '$29',
+        "image": "/images/Earring7.png",
+        "description": "Monstera Hoops, botanical earrings"
     },
     {
         "id": 7,
-        "name": "Greenary",
-        "price": '$20',
-        "image": "/images/clayEarrings.png",
-        "description": "So much green."
+        "name": "The Charlotte",
+        "price": '$39',
+        "image": "/images/Earring8.png",
+        "description": "The Charlotte polymer clay earrings"
     },
     {
         "id": 8,
-        "name": "Ocean",
-        "price": '$9',
-        "image": "/images/bathSalts.png",
-        "description": "Be Blue."
+        "name": "Hungarian Motif",
+        "price": '$49',
+        "image": "/images/Earring9.png",
+        "description": "Hungarian folk motif jewelry earrings"
     },
 ];
