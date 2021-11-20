@@ -6,12 +6,15 @@ import Contact from './ContactCompoent';
 import Footer from './FooterComponent';
 import { Switch, Route, Redirect, withRouter } from 'react-router-dom';
 import Earrings from './EarringsComponent';
+import Oils from './OilsComponent';
 import { ProductTypes } from '../assets/products';
 import { clayEarrings } from '../assets/products';
+import { essentialOils } from '../assets/products';
 
 function Main(props) {
         const [ourProducts] = useState(ProductTypes);
         const [ourEarrings] = useState(clayEarrings);
+        const [ourOils] = useState(essentialOils)
 
         return (
             <React.Fragment>
@@ -20,6 +23,7 @@ function Main(props) {
                     <Route path='/home' component={Home} />
                     <Route exact path='/shop'  render={() => <Products ourProducts={ourProducts} />}/>
                     <Route exact path='/shop/ClayEarrings'  render={() => <Earrings earrings={ourEarrings} />} />
+                    <Route exact path='/shop/EssentialOils'  render={() => <Oils oils={ourOils} />} />
                     <Route exact path='/contact' component={Contact} />
                     <Redirect to='/home' />
                 </Switch>
