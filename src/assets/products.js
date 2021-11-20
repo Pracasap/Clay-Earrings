@@ -19,7 +19,7 @@ export const ProductTypes = [
     },
     {
         "id": "Candles",
-        "name": "Candles",
+        "name": "Scented Candles",
         "image": "images/scentedCandles.png",
         "description": "We have scented candles with different flowers and leaves so you can feel like you are in the nature."
     },
@@ -45,7 +45,7 @@ export const clayEarrings = [
         "name": "Black Gemstone",
         "price": '$59',
         "image": "/images/Earring3.png",
-        "description": "Women's black gmstones earrings"
+        "description": "Black gmstones earrings"
     },
     {
         "id": 3,
