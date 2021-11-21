@@ -36,7 +36,7 @@ export const clayEarrings = [
     {
         "id": 1,
         "name": "Halloween Earrings",
-        "price": '$70',
+        "price": '$79',
         "image": "/images/Earring2.png",
         "description": "Homemade clay Halloween earrings"
     },
@@ -78,7 +78,7 @@ export const clayEarrings = [
     {
         "id": 7,
         "name": "The Charlotte",
-        "price": '$39',
+        "price": '$59',
         "image": "/images/Earring8.png",
         "description": "The Charlotte polymer clay earrings"
     },

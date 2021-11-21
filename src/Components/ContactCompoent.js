@@ -130,7 +130,7 @@ class Contact extends Component {
     
         return (
             <div className="container-fluid products">
-                <div className="container mb-5">
+                <div className="container pb-5">
                     <div className="row">
                         <div className="col mt-5">
                             <h3>Get In Touch</h3>
