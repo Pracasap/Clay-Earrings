@@ -12,11 +12,14 @@ function Home() {
                     <video id="background-video" autoPlay loop muted poster={background}>
                         <source src={earring} type="video/mp4" />
                     </video>
-                    <h1>Forever Creating</h1>
+                    <h1>Forever Avenue</h1>
                     <h2>How majestic</h2>
                     <div className="d-flex justify-content-center">
                     <Link to={ `/shop` }>
                         <Button className="btn btn-full btn-lg mr-3">Shop Our Creations</Button>
+                    </Link>
+                    <Link to={ `/shop` }>
+                        <Button className="btn btn-full btn-lg mr-3">Schedule an Appointment</Button>
                     </Link>
                     </div>
                 </div>

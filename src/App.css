@@ -258,7 +258,9 @@ button[type=reset] {
 }
 
 @media (max-width: 576px) {
-  
+  #background-video {
+    display: none;
+  }
   h1, h2 {
     color: white !important;
     text-align: center !important;
@@ -289,6 +291,8 @@ button[type=reset] {
     display: grid !important;
     align-content: center !important;
     padding-bottom: 15vh;
+    background-image: url(images/1.png);
+    background-repeat: no-repeat;
   }
   
 }

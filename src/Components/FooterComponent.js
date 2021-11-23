@@ -6,7 +6,7 @@ function Footer() {
             <div className="container p-4">
                 <div className="row">
                     <div className="col-md-6 copyright">
-                        <h6>© 2021 Copyrights ForeverCreating.com</h6>
+                        <h6>© 2021 Copyrights ForeverAvenue.com</h6>
                     </div>
                     <div className="col-md-6 social-links">
                         <a href="https://www.facebook.com/forevercreating" target="_blank" rel="noreferrer">

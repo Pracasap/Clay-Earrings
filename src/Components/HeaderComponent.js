@@ -11,7 +11,7 @@ function Header() {
             <Navbar light sticky="top" expand="md" className="nav-bar">  
                 <div className="container">
                     <NavbarBrand href="/" className="NavbarBrand">
-                        Forever Creating
+                        Forever Avenue
                     </NavbarBrand> 
                     <NavbarToggler onClick={toggleNav} className="navbar-dark" />
                     <Collapse isOpen={collapsed} navbar>
