@@ -1,8 +1,13 @@
-import React from 'react';
+import React, { useLayoutEffect } from 'react';
 import { Card, CardBody, CardText, CardTitle, Button } from 'reactstrap';
 import { Link } from 'react-router-dom';
 
 function Products(props) {
+    
+    useLayoutEffect(() => {
+        window.scrollTo(0, 0)
+    });
+
     const ourProducts = props.ourProducts.map(product => {
         return (
             <div key={product.id} className="col-md-6 p-3">

@@ -270,7 +270,7 @@ button[type=reset] {
   }
   h1 {
     font-family: 'Style Script', cursive;
-    font-size: 7rem !important;
+    font-size: 6rem !important;
     text-shadow: 2px 2px 7px #000 !important;
     -moz-text-shadow: 0 0 2px #000;
     -webkit-text-shadow: 0 0 2px #000;
