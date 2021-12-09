@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 function Candles(props) {
     const candles = props.candles.map(candle => {
         return (
-            <div key={candle.id} className="col-md-4 p-3">
+            <div key={candle.id} className="col-md-6 col-lg-4 p-3">
                 <RenderCandles candle={candle} />
             </div>
         )

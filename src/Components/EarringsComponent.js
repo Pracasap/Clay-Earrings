@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 function Earrings(props) {
     const earrings = props.earrings.map(earring => {
         return (
-            <div key={earring.id} className="col-md-4 p-3">
+            <div key={earring.id} className="col-md-6 col-lg-4 p-3">
                 <RenderEarrings earring={earring} />
             </div>
         )

@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 function Salts(props) {
     const salts = props.salts.map(salt => {
         return (
-            <div key={salt.id} className="col-md-4 p-3">
+            <div key={salt.id} className="col-md-6 col-lg-4 p-3">
                 <Rendersalts salt={salt} />
             </div>
         )

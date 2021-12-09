@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 function Oils(props) {
     const oils = props.oils.map(oil => {
         return (
-            <div key={oil.id} className="col-md-4 p-3">
+            <div key={oil.id} className="col-md-6 col-lg-4 p-3">
                 <RenderOils oil={oil} />
             </div>
         )
