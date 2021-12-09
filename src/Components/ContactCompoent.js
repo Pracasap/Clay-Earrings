@@ -134,7 +134,6 @@ class Contact extends Component {
                     <div className="row">
                         <div className="col mt-5">
                             <h3>Get In Touch</h3>
-                            <h5>If you want to pick up any product(s) at your appointment, please send me your full name, phone number, and a list of the products you would like and I will reach out to you.</h5>
                         </div>
                     </div>
                     <div className="row contactBox" style={{borderRadius: 2}}>

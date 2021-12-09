@@ -18,9 +18,6 @@ function Home() {
                     <Link to={ `/shop` }>
                         <Button className="btn btn-full btn-lg mr-3">Shop Our Creations</Button>
                     </Link>
-                    <Link to={ `/shop` }>
-                        <Button className="btn btn-full btn-lg mr-3">Schedule an Appointment</Button>
-                    </Link>
                     </div>
                 </div>
             </div>
