@@ -270,7 +270,7 @@ button[type=reset] {
   }
   h1 {
     font-family: 'Style Script', cursive;
-    font-size: 6rem !important;
+    font-size: 7rem !important;
     text-shadow: 2px 2px 7px #000 !important;
     -moz-text-shadow: 0 0 2px #000;
     -webkit-text-shadow: 0 0 2px #000;
@@ -293,6 +293,7 @@ button[type=reset] {
     padding-bottom: 15vh;
     background-image: url(images/1.png);
     background-repeat: no-repeat;
+    background-size: cover;
   }
   
 }
