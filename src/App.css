@@ -165,6 +165,14 @@ button[type=reset] {
   color: rgb(50, 50, 50) !important;
 }
 
+.card-img-div { 
+  position: relative !important;
+}
+.card-img-div:hover {
+  transition: 0.4s !important;
+  transform: scale(1.02);
+}
+
 .contactBox {
   background-image: url(./images/blurry-gradient-haikei.png);
   background-repeat: no-repeat;

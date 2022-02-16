@@ -34,7 +34,7 @@ function Products(props) {
 const RenderProducts = ({product}) => {
     return (
         <Card className="shadow">
-            <div className="card-img-div">
+            <div>
                 <img width="100%" src={product.image} alt={product.name} />
             </div>
             <CardBody>

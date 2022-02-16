@@ -35,8 +35,8 @@ function Earrings(props) {
 
 const RenderEarrings = ({earring}) => {
     return (
-        <Card className="shadow">
-            <div className="card-img-div">
+        <Card className="shadow card-img-div">
+            <div>
                 <img width="100%" src={earring.image} alt={earring.name} />
             </div>
             <CardBody>
