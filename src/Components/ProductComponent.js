@@ -10,8 +10,10 @@ function Products(props) {
 
     const ourProducts = props.ourProducts.map(product => {
         return (
-            <div key={product.id} className="col-md-6 p-3">
-                <RenderProducts product={product} />
+            <div key={product.id} className="col-md-4 p-3 card-img-div">
+                <Link to={ `/shop/${product.id}` }>
+                    <RenderProducts product={product} />
+                </Link>
             </div>
         )
     })
@@ -40,10 +42,6 @@ const RenderProducts = ({product}) => {
             <CardBody>
             <CardTitle><h4>{product.name}</h4></CardTitle>
             <CardText>{product.description}</CardText>
-            <hr></hr>
-            <Link to={ `/shop/${product.id}` }>
-                <Button className="btn btn-full btn-lg">Shop</Button>
-            </Link>
             </CardBody>
         </Card>
     )

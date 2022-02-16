@@ -31,6 +31,15 @@ function Header() {
                                 <ion-icon name="call" />&nbsp;CONTACT
                                 </NavLink>
                             </NavItem>
+                            <NavItem>
+                                <NavLink className="nav-link" to="" onClick={toggleNav}>
+                                <ion-icon name="cart-outline" />&nbsp;CART
+                                </NavLink>
+                            </NavItem>
+                            
+                            <div className='cart'>
+                                <h3 className='cart-title'>Your Cart</h3>
+                            </div>
                         </Nav>
                     </Collapse> 
                 </div>  
