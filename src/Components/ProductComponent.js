@@ -10,7 +10,7 @@ function Products(props) {
 
     const ourProducts = props.ourProducts.map(product => {
         return (
-            <div key={product.id} className="col-md-3 p-3 card-img-div">
+            <div key={product.id} className="col-md-6 col-lg-3 p-3 card-img-div">
                 <Link to={ `/shop/${product.id}` }>
                     <RenderProducts product={product} />
                 </Link>

@@ -1,14 +1,17 @@
-import React from 'react';
+import React, {useLayoutEffect} from 'react';
+import { ToastContainer } from 'react-toastify';
 import Button from 'reactstrap/lib/Button';
 
 
 const Cart = ({cartItems, handleAddProduct, handleRemoveProduct, handleCartClearance}) => {
-
+    useLayoutEffect(() => {
+        window.scrollTo(0, 0)
+    });
+    
     const subtotal = cartItems.reduce((price, item) => price + item.quantity * item.price, 
-    0);
-    const subtotalRounded = (Math.round(subtotal)).toFixed(2);
+    0).toFixed(2);
     const taxes = (Math.round((0.0825 * subtotal) * 100) /100).toFixed(2);
-    const totalPrice = (Number(subtotalRounded) + Number(taxes)).toFixed(2);
+    const totalPrice = (Number(subtotal) + Number(taxes)).toFixed(2);
     return (
         <div className="container-fluid products">
             <div className="container pb-5">
@@ -53,7 +56,7 @@ const Cart = ({cartItems, handleAddProduct, handleRemoveProduct, handleCartClear
                             <React.Fragment>
                                 <div className='subtotal'>
                                     <div className='subtotal-title'>Subtotal:</div>
-                                    <div className='subtotal-price'>${Math.round(subtotalRounded).toFixed(2)}</div>
+                                    <div className='subtotal-price'>${subtotal}</div>
                                 </div>
                                 <div className='total'>
                                     <div className='subtotal-title'>Taxes:</div>
@@ -64,6 +67,7 @@ const Cart = ({cartItems, handleAddProduct, handleRemoveProduct, handleCartClear
                                     <div className='total-price'>${totalPrice}</div>
                                 </div>
                                 <Button className="btn btn-buy mb-4">Buy Now</Button>
+                                <ToastContainer />
                             </React.Fragment>)}
                     </div>
                     

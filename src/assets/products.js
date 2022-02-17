@@ -21,7 +21,7 @@ export const ProductTypes = [
         "id": "ScentedCandles",
         "name": "Scented Candles",
         "image": "images/scentedCandles.png",
-        "description": "We have scented candles with different flowers and leaves so you can feel like you are in the nature."
+        "description": "We have scented candles with flowers and leaves so you can feel like you are in nature."
     },
 ]
 
@@ -35,7 +35,7 @@ export const clayEarrings = [
     },
     {
         "id": 1,
-        "name": "Halloween Earrings",
+        "name": "Halloween",
         "price": '79',
         "image": "/images/Earring2.png",
         "description": "Homemade clay Halloween earrings"

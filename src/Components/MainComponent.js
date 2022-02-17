@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Header from './HeaderComponent';
 import Home from './HomeComponent';
 import Products from './ProductComponent';
@@ -16,13 +16,20 @@ import { essentialOils } from '../assets/products';
 import { bathSalts } from '../assets/products';
 import { scentedCandles } from '../assets/products';
 
+
 function Main() {
         const [ourProducts] = useState(ProductTypes);
         const [ourEarrings] = useState(clayEarrings);
         const [ourOils] = useState(essentialOils);
         const [ourSalts] = useState(bathSalts);
         const [ourCandles] = useState(scentedCandles);
-        const [cartItems, setCartItems] = useState([]);
+
+        const cartFromLocalStorage = JSON.parse(localStorage.getItem("cartItems") || "[]");
+        const [cartItems, setCartItems] = useState(cartFromLocalStorage);
+
+        useEffect(() => {
+            localStorage.setItem("cartItems", JSON.stringify(cartItems));
+        }, [cartItems]);
 
         const handleAddProduct = (product) => {
             const ProductExist = cartItems.find((item) => item.id === product.id);
