@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Nav, Navbar, NavbarBrand, NavbarToggler, Collapse, NavItem } from 'reactstrap';
-import { NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';;
 
 function Header() {
     const [collapsed, setCollapsed] = useState(false);
@@ -8,7 +8,7 @@ function Header() {
 
     return (
         <React.Fragment>
-            <Navbar light sticky="top" expand="md" className="nav-bar">  
+            <Navbar light sticky="top" expand="lg" className="nav-bar">  
                 <div className="container">
                     <NavbarBrand href="/" className="NavbarBrand">
                         Forever Avenue
@@ -18,28 +18,24 @@ function Header() {
                         <Nav className="ml-auto" navbar>
                             <NavItem>
                                 <NavLink className="nav-link" to="/home" onClick={toggleNav}>
-                                <ion-icon name="home" /> &nbsp;HOME
+                                <ion-icon name="home-sharp" /> &nbsp;HOME
                                 </NavLink>
                             </NavItem>
                             <NavItem>
                                 <NavLink className="nav-link" to="/shop" onClick={toggleNav}>
-                                <ion-icon name="diamond" />&nbsp;SHOP
+                                <ion-icon name="diamond-sharp" />&nbsp;SHOP
                                 </NavLink>
                             </NavItem>
                             <NavItem>
                                 <NavLink className="nav-link" to="/contact" onClick={toggleNav}>
-                                <ion-icon name="call" />&nbsp;CONTACT
+                                <ion-icon name="call-sharp" />&nbsp;CONTACT
                                 </NavLink>
                             </NavItem>
                             <NavItem>
-                                <NavLink className="nav-link" to="" onClick={toggleNav}>
-                                <ion-icon name="cart-outline" />&nbsp;CART
+                                <NavLink className="nav-link cart-icon" to="/cart" onClick={toggleNav}>
+                                <ion-icon name="cart-sharp" />&nbsp;CART 
                                 </NavLink>
                             </NavItem>
-                            
-                            <div className='cart'>
-                                <h3 className='cart-title'>Your Cart</h3>
-                            </div>
                         </Nav>
                     </Collapse> 
                 </div>  
@@ -49,3 +45,32 @@ function Header() {
 }
 
 export default Header;
+
+// Cart
+//                             <div className='cart'>
+//                                 <h3 className='cart-title'>Your Cart</h3>
+//                                 <div className='cart-content'>
+//                                     <div className='cart-box'>
+//                                         <img src="/images/Earring1.png" alt="" className='cart-img' />
+//                                         <div className='detail-box'>
+//                                             <div className='cart-product-title'>Black Floral Moon</div>
+//                                             <div className='cart-price'>$25</div>
+//                                             <input type="number" value="1" className='cart-quantity' />
+//                                         </div>
+//                                         <div className='cart-remove'>
+//                                             <ion-icon name="trash-sharp" className="cart-remove" /></div>
+//                                     </div>
+//                                 </div>
+//                                 {/* Total */}
+//                                 <div className='total'>
+//                                     <div className='total-title'>Total</div>
+//                                     <div className='total-price'>$0</div>
+
+//                                 </div>
+//                                 {/* Buy Button */}
+//                                 <Button className="btn btn-buy">Buy Now</Button>
+//                                 {/* Cart Close */}
+//                                 <div className='close-cart'>
+//                                     <ion-icon name="close-sharp" />
+//                                 </div>
+//                             </div>
