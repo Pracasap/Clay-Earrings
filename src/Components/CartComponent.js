@@ -2,7 +2,13 @@ import React from 'react';
 import Button from 'reactstrap/lib/Button';
 
 
-const Cart = ({cartItems}) => {
+const Cart = ({cartItems, handleAddProduct, handleRemoveProduct}) => {
+
+    const subtotal = cartItems.reduce((price, item) => price + item.quantity * item.price, 
+    0);
+    const subtotalRounded = (Math.round(subtotal * 100) /100).toFixed(2);
+    const taxes = (Math.round((0.0825 * subtotal) * 100) /100).toFixed(2);
+    const totalPrice = Number(subtotal) + Number(taxes);
     return (
         <div className="container-fluid products">
             <div className="container pb-5">
@@ -11,33 +17,47 @@ const Cart = ({cartItems}) => {
                         <h3>Your Cart</h3>
                     </div>
                 </div>
-                <div className="row cart border" style={{ borderRadius: 2 }}>
+                <div className="row cart " style={{ borderRadius: 2 }}>
                     <div className='cart-content'>
                         {cartItems.length === 0 && (
-                        <div className='cart-box'> Your cart is empty! </div>
+                        <div className='cart-box d-flex justify-content-center'><h5>Your cart is empty!</h5></div>
                         )}
-                        {cartItems.map((item) => (
-                            <div key={item.id} className='cart-box'>
-                            <img src=" " alt="" className='cart-img' />
+
+                        {cartItems.map((item) => {
+                        const itemTotal = item.price * item.quantity;
+                        return (
+                        <div key={item.id} className='cart-box border p-2'>
+                            <img src={item.image} alt="" className='cart-img' />
                             <div className='detail-box'>
-                                <div className='cart-product-title'>Black Floral Moon</div>
-                                <div className='cart-price'>$25</div>
-                                {/* <input type="number" value="1" className='cart-quantity' /> */}
+                                <div className='cart-product-title'>{item.name}</div>
+                                <div className='cart-price'>$ {item.price}</div>
+                                <div className='cart-items-function'>
+                                    <button className='cart-items-add' onClick={() => handleAddProduct(item)}>+</button>{item.quantity}
+                                    <button className='cart-items-remove' onClick={() => handleRemoveProduct(item)}>-</button>
+                                </div>
+                            </div>
+                            <div className='item-total'>
+                                {item.quantity} * ${item.price} = ${itemTotal}
                             </div>
                         </div>
-                        ))}
+                        )})}
+                        {/* Total */}
+                        <div className='subtotal'>
+                            <div className='subtotal-title'>Subtotal:</div>
+                            <div className='subtotal-price'>${subtotalRounded}</div>
+                        </div>
+                        <div className='total'>
+                            <div className='subtotal-title'>Taxes:</div>
+                            <div className='subtotal-price'>${taxes}</div>
+                        </div>
+                        <div className='total'>
+                            <div className='total-title'>Total:</div>
+                            <div className='total-price'>${totalPrice}</div>
+                        </div>
+                        {/* Buy Button */}
+                        <Button className="btn btn-buy mb-4">Buy Now</Button>
                     </div>
-                    {/* Total */}
-                    <div className='total'>
-                        <div className='total-title'>Total</div>
-                        <div className='total-price'>$0</div>
-                    </div>
-                    {/* Buy Button */}
-                    <Button className="btn btn-buy">Buy Now</Button>
-                    {/* Cart Close */}
-                    <div className='close-cart'>
-                        <ion-icon name="close-sharp" />
-                    </div>
+                    
                 </div>
             </div>
         </div>

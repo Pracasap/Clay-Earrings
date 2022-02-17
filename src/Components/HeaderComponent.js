@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Nav, Navbar, NavbarBrand, NavbarToggler, Collapse, NavItem } from 'reactstrap';
 import { NavLink } from 'react-router-dom';;
 
-function Header() {
+function Header({cartItems}) {
     const [collapsed, setCollapsed] = useState(false);
     const toggleNav = () => setCollapsed(!collapsed);
 
@@ -33,7 +33,8 @@ function Header() {
                             </NavItem>
                             <NavItem>
                                 <NavLink className="nav-link cart-icon" to="/cart" onClick={toggleNav}>
-                                <ion-icon name="cart-sharp" />&nbsp;CART 
+                                <ion-icon name="cart-sharp" />&nbsp; 
+                                <span className='cart-length'>{cartItems.length === 0 ? "CART" : cartItems.length}</span>
                                 </NavLink>
                             </NavItem>
                         </Nav>

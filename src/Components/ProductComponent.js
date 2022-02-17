@@ -1,5 +1,5 @@
 import React, { useLayoutEffect } from 'react';
-import { Card, CardBody, CardText, CardTitle, Button } from 'reactstrap';
+import { Card, CardBody, CardText, CardTitle } from 'reactstrap';
 import { Link } from 'react-router-dom';
 
 function Products(props) {
@@ -10,7 +10,7 @@ function Products(props) {
 
     const ourProducts = props.ourProducts.map(product => {
         return (
-            <div key={product.id} className="col-md-4 p-3 card-img-div">
+            <div key={product.id} className="col-md-6 p-3 card-img-div">
                 <Link to={ `/shop/${product.id}` }>
                     <RenderProducts product={product} />
                 </Link>
