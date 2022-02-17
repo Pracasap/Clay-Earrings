@@ -46,32 +46,3 @@ function Header({cartItems, totalItems}) {
 }
 
 export default Header;
-
-// Cart
-//                             <div className='cart'>
-//                                 <h3 className='cart-title'>Your Cart</h3>
-//                                 <div className='cart-content'>
-//                                     <div className='cart-box'>
-//                                         <img src="/images/Earring1.png" alt="" className='cart-img' />
-//                                         <div className='detail-box'>
-//                                             <div className='cart-product-title'>Black Floral Moon</div>
-//                                             <div className='cart-price'>$25</div>
-//                                             <input type="number" value="1" className='cart-quantity' />
-//                                         </div>
-//                                         <div className='cart-remove'>
-//                                             <ion-icon name="trash-sharp" className="cart-remove" /></div>
-//                                     </div>
-//                                 </div>
-//                                 {/* Total */}
-//                                 <div className='total'>
-//                                     <div className='total-title'>Total</div>
-//                                     <div className='total-price'>$0</div>
-
-//                                 </div>
-//                                 {/* Buy Button */}
-//                                 <Button className="btn btn-buy">Buy Now</Button>
-//                                 {/* Cart Close */}
-//                                 <div className='close-cart'>
-//                                     <ion-icon name="close-sharp" />
-//                                 </div>
-//                             </div>

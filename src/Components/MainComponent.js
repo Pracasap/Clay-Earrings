@@ -44,6 +44,10 @@ function Main() {
             }
         }
 
+        const handleCartClearance = () => {
+            setCartItems([]);
+        }
+
         const totalItems = cartItems.reduce((number, item) => number + item.quantity, 0)
         
         return (
@@ -57,7 +61,7 @@ function Main() {
                     <Route exact path='/shop/BathSalts'  render={() => <Salts salts={ourSalts} />} />
                     <Route exact path='/shop/ScentedCandles'  render={() => <Candles candles={ourCandles} />} />
                     <Route exact path='/contact' component={Contact} />
-                    <Route exact path = '/cart' render={() => <Cart cartItems = {cartItems} handleAddProduct = {handleAddProduct} handleRemoveProduct = {handleRemoveProduct} />} />
+                    <Route exact path = '/cart' render={() => <Cart cartItems = {cartItems} handleAddProduct = {handleAddProduct} handleRemoveProduct = {handleRemoveProduct} handleCartClearance={handleCartClearance} />} />
                     <Redirect to='/home' />
                 </Switch>
                 <Footer />

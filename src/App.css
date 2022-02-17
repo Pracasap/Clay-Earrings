@@ -271,16 +271,18 @@ button[type=reset] {
 .total-price {
   margin-left: 0.5rem;
   font-size: 1.2rem;
+  font-weight: 600;
 }
 .btn-buy {
   display: flex !important;
   margin: 3.5rem auto 0 auto !important;
   padding: 12px 20px !important;
   border: none !important;
+  border-radius: 3px !important;
   background: #fd4646d1 !important;
   color: #ffffff !important;
-  font-size: 1rem !important;
-  font-weight: 500 !important;
+  font-size: 18px !important;
+  font-weight: 700 !important;
   cursor: pointer !important;
 }
 .btn-buy:hover {
@@ -289,7 +291,41 @@ button[type=reset] {
 .cart-items-add,
 .cart-items-remove {
   width: 30px;
+  border: none;
+  border-radius: 3px;
+  font-size: 16px;
+  color: white;
+  cursor: pointer;
+  background-color: #fd4646d1;
   font-weight: 700;
+}
+.cart-items-add:hover,
+.cart-items-remove:hover {
+  background: #171427 !important;
+}
+.cart-items-add {
+  margin-right: 10px;
+}
+.cart-items-add:active {
+  transform: translateY(1.2px);
+}
+.cart-items-remove {
+  margin-left: 10px;
+}
+.cart-items-remove:active {
+  transform: translateY(1.2px);
+}
+.cart-length{
+  font-weight: 500;
+}
+.clear-cart {
+  display: flex !important;
+  justify-content: flex-end !important;
+  
+}
+.clear-cart-button {
+  padding: 8px 12px !important;
+  font-weight: 400;
   border: none;
   border-radius: 3px;
   font-size: 18px;
@@ -297,24 +333,8 @@ button[type=reset] {
   cursor: pointer;
   background-color: #fd4646d1;
 }
-.cart-items-add:hover,
-.cart-items-remove:hover {
+.clear-cart-button:hover {
   background: #171427 !important;
-}
-.cart-items-add {
-  margin-right: 8px;
-}
-.cart-items-add:active {
-  transform: translateY(1.2px);
-}
-.cart-items-remove {
-  margin-left: 8px;
-}
-.cart-items-remove:active {
-  transform: translateY(1.2px);
-}
-.cart-length{
-  font-weight: 500;
 }
 .item-total {
   font-size: 20px !important;
