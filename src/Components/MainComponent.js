@@ -44,9 +44,11 @@ function Main() {
             }
         }
 
+        const totalItems = cartItems.reduce((number, item) => number + item.quantity, 0)
+        
         return (
             <React.Fragment>
-                <Header cartItems={cartItems} />
+                <Header cartItems={cartItems} totalItems={totalItems} />
                 <Switch>
                     <Route path='/home' component={Home} />
                     <Route exact path='/shop'  render={() => <Products ourProducts={ourProducts} />}/>
