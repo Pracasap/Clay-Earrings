@@ -1,12 +1,27 @@
 import React from 'react';
-import { Card, CardBody, CardText, CardTitle, Button } from 'reactstrap';
+import { Card, CardBody, CardTitle } from 'reactstrap';
 import { Link } from 'react-router-dom';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function Salts(props) {
+
+    const addCartToast = (salt) => {
+        toast.success(`${salt.name} was added to cart!`, {
+            position: "top-center",
+            autoClose: 2000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            });
+    }
+
     const salts = props.salts.map(salt => {
         return (
-            <div key={salt.id} className="col-md-6 col-lg-4 p-3">
-                <Rendersalts salt={salt} />
+            <div key={salt.id} className="col-md-6 col-lg-4 col-xl-3 p-3">
+                <RenderSalts salt={salt} handleAddProduct={props.handleAddProduct} addCartToast={addCartToast} />
             </div>
         )
     })
@@ -20,12 +35,24 @@ function Salts(props) {
                         </Link>
                     </div>
                     <div className="col">
+                    <ToastContainer
+                        position="top-center"
+                        autoClose={2000}
+                        hideProgressBar={true}
+                        newestOnTop
+                        closeOnClick
+                        rtl={false}
+                        pauseOnFocusLoss
+                        draggable
+                        pauseOnHover
+                    />
                         <h3>
                             Bath Salts
                         </h3>
+                        
                     </div>
                 </div>
-                <div className="row" style={{ borderRadius: 2 }}>
+                <div className="row contactBox" style={{ borderRadius: 2 }}>
                         {salts}
                 </div>
             </div>
@@ -33,24 +60,22 @@ function Salts(props) {
     )
 }
 
-const Rendersalts = ({salt}) => {
+const RenderSalts = ({salt, handleAddProduct, addCartToast}) => {
+    
     return (
         <Card className="shadow">
-            <div className="card-img-div">
+            <div>
                 <img width="100%" src={salt.image} alt={salt.name} />
             </div>
             <CardBody>
-            <CardTitle><h4>{salt.name} - {salt.price}</h4></CardTitle>
-            <CardText>{salt.description}</CardText>
-            <hr></hr>
-            <div className="d-flex justify-content-center">
-                <Link to={ `/shop` }>
-                    <Button className="btn btn-full btn-lg">Add To Cart</Button>
-                </Link>
+            <CardTitle><h4>{salt.name} </h4></CardTitle>
+            <CardTitle><h5>${salt.price} </h5></CardTitle>
+            <div className='add-to-cart' alt="Add To Cart" onClick={() => {handleAddProduct(salt); addCartToast(salt)}}>
+                <ion-icon name="bag-add-sharp" size="large" />
             </div>
             </CardBody>
         </Card>
     )
 }
 
-export default Salts;
+export default Salts

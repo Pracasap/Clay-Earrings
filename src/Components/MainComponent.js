@@ -63,10 +63,10 @@ function Main() {
                 <Switch>
                     <Route path='/home' component={Home} />
                     <Route exact path='/shop'  render={() => <Products ourProducts={ourProducts} />}/>
-                    <Route exact path='/shop/ClayEarrings'  render={() => <Earrings earrings={ourEarrings} handleAddProduct ={handleAddProduct} handleRemoveProduct = {handleRemoveProduct} />} />
-                    <Route exact path='/shop/EssentialOils'  render={() => <Oils oils={ourOils} />} />
-                    <Route exact path='/shop/BathSalts'  render={() => <Salts salts={ourSalts} />} />
-                    <Route exact path='/shop/ScentedCandles'  render={() => <Candles candles={ourCandles} />} />
+                    <Route exact path='/shop/ClayEarrings'  render={() => <Earrings earrings={ourEarrings} handleAddProduct ={handleAddProduct} />} />
+                    <Route exact path='/shop/EssentialOils'  render={() => <Oils oils={ourOils} handleAddProduct ={handleAddProduct} />} />
+                    <Route exact path='/shop/BathSalts'  render={() => <Salts salts={ourSalts} handleAddProduct ={handleAddProduct} />} />
+                    <Route exact path='/shop/ScentedCandles'  render={() => <Candles candles={ourCandles} handleAddProduct ={handleAddProduct} />} />
                     <Route exact path='/contact' component={Contact} />
                     <Route exact path = '/cart' render={() => <Cart cartItems = {cartItems} handleAddProduct = {handleAddProduct} handleRemoveProduct = {handleRemoveProduct} handleCartClearance={handleCartClearance} />} />
                     <Redirect to='/home' />

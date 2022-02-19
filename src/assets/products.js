@@ -102,7 +102,7 @@ export const essentialOils = [
     },
     {
         "id": 1,
-        "name": "Halloween Earrings",
+        "name": "Halloween",
         "price": 70,
         "image": "/images/Earring2.png",
         "description": "Homemade clay Halloween earrings"

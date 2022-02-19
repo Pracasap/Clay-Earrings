@@ -93,7 +93,7 @@ a:hover {
 .btn:link,
 .btn:visited {
     display: inline-block;
-    padding: 12px 30px !important;
+    padding: 10px 30px !important;
     font-weight: 400;
     text-decoration: none;
     border-radius: 0px !important;
@@ -107,13 +107,14 @@ button[type=submit],
 button[type=reset] {
     background-color: #003366 !important;
     border: 1px solid #003366  !important;
+    border-radius: 3px !important;
     color: #fff !important;
   }
 
 .btn-full:hover,
 .btn-full:active {
-    border: 1px solid rgb(33, 201, 201) !important;
-    background-color: rgb(33, 201, 201) !important;
+    border: 1px solid #03ddcfd1 !important;
+    background-color: #03ddcfd1 !important;
     color: #000 !important;
 }
 
@@ -180,7 +181,8 @@ button[type=reset] {
 
 .contactBox {
   background-image: linear-gradient(-150deg, #2CD8D5 0%, #C5C1FF 56%, #FFBAC3 100%);
-  box-shadow: -8px 8px 8px hsl(0 4% 15% / 10%) !important;
+  -webkit-box-shadow: 0 0 15px rgb(40, 37, 37, 0.2);
+        box-shadow: 0 0 15px rgba(40, 37, 37, 0.2);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -189,7 +191,9 @@ button[type=reset] {
 .cart {
   padding: 20px;
   background-image: linear-gradient(-150deg, #2CD8D5 0%, #C5C1FF 56%, #FFBAC3 100%);
-  box-shadow: -8px 8px 8px hsl(0 4% 15% / 10%) !important;
+  /* box-shadow: -8px 8px 8px hsl(0 4% 15% / 10%) !important; */
+  -webkit-box-shadow: 0 0 15px rgb(40, 37, 37, 0.2);
+  box-shadow: 0 0 15px rgba(40, 37, 37, 0.2);
   transition: 0.3s;
 }
 .cart.active{
@@ -245,7 +249,7 @@ button[type=reset] {
   color: rgb(255, 255, 255) !important;
 }
 .add-to-cart:hover {
-  background: #5e01b0;
+  background: #4e00acd1;
 }
 .subtotal {
   width: 100%;
@@ -279,7 +283,7 @@ button[type=reset] {
 }
 .btn-buy {
   display: flex !important;
-  margin: 3.5rem auto 0 auto !important;
+  margin: 1rem auto 0 auto !important;
   padding: 12px 20px !important;
   border: none !important;
   border-radius: 3px !important;

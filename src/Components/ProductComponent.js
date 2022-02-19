@@ -42,6 +42,10 @@ const RenderProducts = ({product}) => {
             <CardBody>
             <CardTitle><h4>{product.name}</h4></CardTitle>
             <CardText>{product.description}</CardText>
+            <hr />
+            <div className='d-flex justify-content-center'>
+                <button className='btn btn-full btn-lg'>Shop</button>
+            </div>
             </CardBody>
         </Card>
     )

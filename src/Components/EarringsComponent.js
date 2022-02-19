@@ -52,7 +52,7 @@ function Earrings(props) {
                         
                     </div>
                 </div>
-                <div className="row" style={{ borderRadius: 2 }}>
+                <div className="row contactBox" style={{ borderRadius: 2 }}>
                         {earrings}
                 </div>
             </div>
@@ -63,7 +63,7 @@ function Earrings(props) {
 const RenderEarrings = ({earring, handleAddProduct, addCartToast}) => {
     
     return (
-        <Card className="shadow card-img-div">
+        <Card className="shadow">
             <div>
                 <img width="100%" src={earring.image} alt={earring.name} />
             </div>
