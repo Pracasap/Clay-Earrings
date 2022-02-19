@@ -220,7 +220,6 @@ button[type=reset] {
 .cart {
   padding: 20px;
   background-image: linear-gradient(-150deg, #2CD8D5 0%, #C5C1FF 56%, #FFBAC3 100%);
-  /* box-shadow: -8px 8px 8px hsl(0 4% 15% / 10%) !important; */
   -webkit-box-shadow: 0 0 15px rgb(40, 37, 37, 0.2);
   box-shadow: 0 0 15px rgba(40, 37, 37, 0.2);
   transition: 0.3s;
