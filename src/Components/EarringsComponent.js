@@ -70,8 +70,8 @@ const RenderEarrings = ({earring, handleAddProduct, addCartToast}) => {
             <CardBody>
             <CardTitle><h4>{earring.name} </h4></CardTitle>
             <CardTitle><h5>${earring.price} </h5></CardTitle>
-            <div className='add-to-cart' alt="Add To Cart" onClick={() => {handleAddProduct(earring); addCartToast(earring)}}>
-                <ion-icon name="bag-add-sharp" size="large" />
+            <div class="tooltip-div add-to-cart" onClick={() => {handleAddProduct(earring); addCartToast(earring)}}><ion-icon name="bag-add-sharp" size="large" />
+                <span class="tooltip-text">Add to cart</span>
             </div>
             </CardBody>
         </Card>
