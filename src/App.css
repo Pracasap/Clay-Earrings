@@ -150,6 +150,35 @@ button[type=reset] {
   font-size: 40px !important;
 }
 
+/* Tooltip */
+.tooltip-div:hover .tooltip-text {
+  /* NEW */
+  display: block;
+}
+
+.tooltip-text {
+  display: none;
+  /* NEW */
+  /* background-image: linear-gradient(-150deg, #6aa7fc 0%, #00fbff 56%, #33c9ff 100%); */
+  background:rgb(0, 0, 0);
+  margin-left: -35px;
+  margin-top: -73px;
+  padding-left: 10px;
+  padding-top: 2px;
+  position: absolute;
+  z-index: 1000;
+  width: 100px;
+  height: 30px;
+  font-size: 1.1rem;
+  color:rgb(255, 255, 255);
+  border-radius: 5px;
+}
+
+.tooltip-div {
+  margin: 0px;
+  border-radius: 2px;
+}
+
 /* Products */
 .products {
   min-height: calc(100vh - 155px) !important;
@@ -243,13 +272,14 @@ button[type=reset] {
   bottom: 0;
   right: 0;
   background: #003366;
-  padding: 8px;
+  padding: 6px;
   cursor: pointer;
   font-size: 10px !important;
   color: rgb(255, 255, 255) !important;
+  transform: scale(1.02) !important;
 }
 .add-to-cart:hover {
-  background: #4e00acd1;
+  background: #01407e;
 }
 .subtotal {
   width: 100%;
@@ -347,6 +377,8 @@ button[type=reset] {
 .item-total {
   font-size: 1rem !important;
 }
+
+
 /* Footer */
 .site-footer {
   background-image: linear-gradient(to right, #3ab5b0 0%, #3d99be 31%, #56317a 100%);

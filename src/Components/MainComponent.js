@@ -59,7 +59,7 @@ function Main() {
         
         return (
             <React.Fragment>
-                <Header cartItems={cartItems} totalItems={totalItems} />
+                <Header totalItems={totalItems} />
                 <Switch>
                     <Route path='/home' component={Home} />
                     <Route exact path='/shop'  render={() => <Products ourProducts={ourProducts} />}/>

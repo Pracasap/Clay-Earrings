@@ -70,7 +70,7 @@ const RenderSalts = ({salt, handleAddProduct, addCartToast}) => {
             <CardBody>
             <CardTitle><h4>{salt.name} </h4></CardTitle>
             <CardTitle><h5>${salt.price} </h5></CardTitle>
-            <div className='add-to-cart' alt="Add To Cart" onClick={() => {handleAddProduct(salt); addCartToast(salt)}}>
+            <div className='add-to-cart' title="Add to cart" onClick={() => {handleAddProduct(salt); addCartToast(salt)}}>
                 <ion-icon name="bag-add-sharp" size="large" />
             </div>
             </CardBody>
