@@ -81,22 +81,10 @@ const Cart = ({cartItems, handleAddProduct, handleRemoveProduct, handleCartClear
                                     <div className='total-title'>Total:</div>
                                     <div className='total-price'>${totalPrice}</div>
                                 </div>
-                                {/* <StripeCheckout 
-                                    className="btn-buy mb-4"
-                                    stripeKey='pk_test_51KUJfbF0utbXpEsKNGQqNeNCcAnzoF4Y9xn6cIfwva7FLi6WLkhcuiNzzka7xbwWpyvEtDlD11eDc0z3U6luWaQh00aC3z8xnJ'
-                                    token={handleToken}
-                                    billingAddress
-                                    shippingAddress
-                                    amount={totalPrice * 100}
-                                    name="ForeverAvenue.com"
-                                /> */}
-                                <form action="/checkout" method="POST">
-                                    <button type="submit" className='btn-buy'>Checkout</button>
-                                </form>
+                                    <button className='btn-buy'>Checkout</button>
                                 <ToastContainer />
                             </React.Fragment>)}
                     </div>
-                    
                 </div>
             </div>
         </div>
